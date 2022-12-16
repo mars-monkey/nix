@@ -71,9 +71,9 @@
   services.flatpak.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.noahh = {
+  users.users.nix = {
     isNormalUser = true;
-    description = "noahh";
+    description = "nix";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       librewolf

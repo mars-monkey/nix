@@ -34,6 +34,8 @@
       enable = true;
       layout = "us";
       xkbVariant = "";
+      desktopManager.gnome.enable = true;
+      # libinput.enable = true; # Enable touchpad support (enabled default in most desktopManager).
       
       displayManager = {
         gdm.enable = true;
@@ -43,10 +45,6 @@
           user = "noahh";
         };
       };
-      
-      desktopManager.gnome.enable = true;
-      
-      # libinput.enable = true; # Enable touchpad support (enabled default in most desktopManager).
     };
 
     printing.enable = true;

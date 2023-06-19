@@ -20,9 +20,9 @@
 
   networking = {
     hostName = "nixos";
+
     # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-    # Configure network proxy if necessary
     # proxy = { default = "http://user:password@proxy:port/"; noProxy = "127.0.0.1,localhost,internal.domain"; };
 
     networkmanager.enable = true;
@@ -37,22 +37,14 @@
   
   services = {
     xserver = {
-      # Enable the X11 windowing system.
       enable = true;
+      layout = "us";
+      xkbVariant = "";
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
     };
-  };
 
-.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  services.gnome.core-utilities.enable = false;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    gnome.core-utilities.enable = false;
   };
 
   # Enable CUPS to print documents.

@@ -1,136 +1,193 @@
-# Help is available in the configuration.nix(5) man page and
-# in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
+# Help is available in the configuration.nix(5) man page.
+# Edit hardware-configuration.nix as well
+ 
+{ config, lib, modulesPath, pkgs, ... }:
+ 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
+  imports = [
+    (modulesPath + "/profiles/qemu-guest.nix")
+  ];
+  
+  boot = {
+    plymouth.enable = true;
+    tmp.cleanOnBoot = true;
+    kernelModules = [ "kvm-intel" ];
+    
+    initrd.availableKernelModules = [
+      "ahci"
+      "xhci_pci"
+      "virtio_pci"
+      "sr_mod"
+      "virtio_blk"
     ];
+    
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+  };
+  
+  fileSystems = {
+    "/" = {
+      device = "/dev/disk/by-uuid/4b823fe4-a2ed-4407-9d73-bb97e9376874";
+      fsType = "btrfs";
+    };
+    
+    "/boot" = {
+      device = "/dev/disk/by-uuid/A9CE-9138";
+      fsType = "vfat";
+    };
+  };
+  
+  hardware = {
+    cpu.intel.updateMicrocode = true;
+    enableAllFirmware = true;
+    enableRedistributableFirmware = true;
+    
+    pulseaudio.enable = false;
+    
+    bluetooth = {
+      enable = true;
+      powerOnBoot = false;
+    };
 
-  boot.loader = {
-    systemd-boot.enable = true;
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
+    opengl = {
+      enable = true;
+      extraPackages = with pkgs; [
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
+      ];
+    };
+  };
+  
+  powerManagement = {
+    enable = true;
+    scsiLinkPolicy = "med_power_with_dipm";
+    cpuFreqGovernor = "performance"
+  };
+  
+  system = {
+    stateVersion = "23.05";
+    
+    autoUpgrade = {
+      enable = true;
+      allowReboot = false;
+      operation = "boot";
+      dates = "daily";
+      persistent = false;
+    };
+  };
+  
+  console = {
+    font = "ter-v24n";
+    keyMap = "us";
+  };
+  
+  nix = {
+    gc = {
+      automatic = true;
+      persistent = true;
+      dates = "19:10";
+      options = "--delete-older-than 3d";
+    };
+
+    settings = {
+      auto-optimise-store = true;
+      
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
     };
   };
 
-  networking = {
-    hostName = "nixos-test";
-    networkmanager.enable = true;
+  nixpkgs = {
+    hostPlatform = lib.mkDefault "x86_64-linux";
+  
+    config = {
+      allowUnfree = true;
     
-    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-    # proxy = { default = "http://user:password@proxy:port/"; noProxy = "127.0.0.1,localhost,internal.domain"; };
+      packageOverrides = in_pkgs : {
+        linuxPackages = in_pkgs.linuxPackages_latest;
+      };
+    };
   };
-
+  
+  i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Africa/Douala";
 
-  i18n.defaultLocale = "en_US.UTF-8";
+  networking = {
+    hostName = "nixos-vm";
+    networkmanager.enable = true;
+    useDHCP = lib.mkDefault true;
+    nameservers = [ "1.1.1.3, 1.0.0.3" ];
+    
+    firewall = {
+      enable = true;
+      logRefusedConnections = true;
+    };
+  };
 
   services = {
+    fwupd.enable = true;
+    thermald.enable = true;
+    locate.enable = true;
+    flatpak.enable = true;
+    printing.enable = true;
+    gvfs.enable = true;
+    
+    gnome = {
+      gnome-keyring.enable = true;
+      core-utilities.enable = false;
+    };
+    
     xserver = {
       enable = true;
       layout = "us";
-      xkbVariant = "";
-      desktopManager.gnome.enable = true;
-      # libinput.enable = true; # Enable touchpad support (enabled default in most desktopManager).
+      # libinput.enable = true;
+      excludePackages = [ pkgs.xterm ];
       
-      displayManager = {
-        gdm.enable = true;
-        
-        autoLogin = {
-          enable = false;
-          user = "noahh";
-        };
+      desktopManager = {
+        gnome.enable = true;
+        xterm.enable = false;
+      };
+
+      displayManager.gdm = {
+        enable = true;
+        wayland = true;
       };
     };
-
-    printing.enable = true;
-
-    sound.enable = true;
-    hardware.pulseaudio.enable = false;
-    security.rtkit.enable = true;
+    
     pipewire = {
       enable = true;
       alsa.enable = true;
       alsa.support32Bit = true;
       pulse.enable = true;
-
-      # If you want to use JACK applications, uncomment this
-      # jack.enable = true;
-
-      # use the example session manager (no others are packaged yet so this is enabled by default,
-      # no need to redefine it in your config for now)
-      # media-session.enable = true;
     };
-    
-    flatpak.enable = true;
-    
-    gnome.core-utilities.enable = false;
   };
-
-  # Don't forget to set a password with ‘passwd’.
-  users.users.nix = {
-    isNormalUser = true;
-    description = "nix";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      librewolf
-      gnome.gnome-terminal
-      gnome.gnome-tweaks
-      gnome.nautilus
-      baobab
-      gnome.gnome-system-monitor
+  
+  environment = {
+    gnome.excludePackages = with pkgs; [
+      gnome-tour
+      gnome-extension-manager
     ];
   };
-
-  nixpkgs.config.allowUnfree = true;
-
-  # To search, run $ nix search wget
-  environment.systemPackages = with pkgs; [
-    flatpak
-    wget
-  ];
-
-  qt5 = {
+  
+  qt = {
     enable = true;
     platformTheme = "gtk2";
     style = "gtk2";
   };
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  system = {
-    # This value determines the NixOS release from which the default
-    # settings for stateful data, like file locations and database versions
-    # on your system were taken. It‘s perfectly fine and recommended to leave
-    # this value at the release version of the first install of this system.
-    # Before changing this value read the documentation for this option
-    # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-    stateVersion = "23.05";
+  
+  users = {
+    mutableUsers = false;
     
-    autoUpgrade = {
-      enable = true;
-      allowReboot = true;
+    users.mars-monkey = {
+      isNormalUser = true;
+      description = "Mars Monkey";
+      extraGroups = [ "wheel" "networkmanager" ];
+      hashedPassword = "$y$j9T$mzN.ugmqwGhjw/Lfzb0fC/$lS0GEu7Ect6/aCyCmrO7wo6RBnHRxPJkS4bqhTXjKI6";
     };
-  };
+  };    
 }

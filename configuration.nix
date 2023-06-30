@@ -29,12 +29,12 @@
   
   fileSystems = {
     "/" = {
-      device = "/dev/disk/by-uuid/4b823fe4-a2ed-4407-9d73-bb97e9376874";
+      device = "/dev/disk/by-label/root";
       fsType = "btrfs";
     };
     
     "/boot" = {
-      device = "/dev/disk/by-uuid/A9CE-9138";
+      device = "/dev/disk/by-label/boot";
       fsType = "vfat";
     };
   };

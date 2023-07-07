@@ -26,16 +26,41 @@
       efi.canTouchEfiVariables = true;
     };
   };
-  
-  fileSystems = {
-    "/" = {
-      device = "/dev/disk/by-label/root";
-      fsType = "btrfs";
+
+  filesystems = {
+    "/boot" = {
+      lable = "BOOT";
+      fsType = "vfat";
     };
     
-    "/boot" = {
-      device = "/dev/disk/by-label/boot";
-      fsType = "vfat";
+    "/" = {
+      label = "ROOT";
+      fsType = "btrfs";
+      options = [ "compress=zstd" "noatime" ];
+    };
+
+    "/home" = {
+      label = "ROOT";
+      fsType = "btrfs";
+      options = [ "compress=zstd" "noatime" ];
+    };
+
+    "/nix" = {
+      label = "ROOT";
+      fsType = "btrfs";
+      options = [ "compress=zstd" "noatime" ];
+    };
+
+    "/var/log" = {
+      label = "ROOT";
+      fsType = "btrfs";
+      options = [ "compress=zstd" "noatime" ];
+    };
+
+    "/persist" = {
+      label = "ROOT";
+      fsType = "btrfs";
+      options = [ "compress=zstd" "noatime" ];
     };
   };
   

@@ -15,7 +15,7 @@
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
       hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git add -A && git commit -m 'Push local changes' && popd ";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey";
-      gp = "pushd ~/nix && git add -A && git commit -m 'Push local repo' && git push && popd";
+      gp = "var=$(pwd) && cd ~/nix && git add -A && git commit -m 'Push local repo' && git push && cd $var";
     };
     
     sessionVariables = {

@@ -28,9 +28,8 @@
     opengl = {
       enable = true;
       extraPackages = with pkgs; [
+        intel-media-driver
         vaapiIntel
-        vaapiVdpau
-        libvdpau-va-gl
       ];
     };
   };
@@ -80,7 +79,7 @@
   
     config = {
       allowUnfree = true;
-    
+           
       packageOverrides = in_pkgs : {
         linuxPackages = in_pkgs.linuxPackages_latest;
       };
@@ -106,7 +105,6 @@
     fwupd.enable = true;
     thermald.enable = true;
     locate.enable = true;
-    flatpak.enable = true;
     printing.enable = true;
     gvfs.enable = true;
     
@@ -142,11 +140,12 @@
   
   environment = {
 
-    systemPackages = with pkgs; [ ];
+    systemPackages = [
+      
+    ];
 
     gnome.excludePackages = with pkgs; [
       gnome-tour
-      gnome-extension-manager
     ];
   };
   

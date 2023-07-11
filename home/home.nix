@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-# hi
+
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -55,8 +55,8 @@
       gh
       git
       gitg
+      gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.pop-shell
-      gnomeExtensions.ddterm
       gnome.dconf-editor
       gnome.gnome-calculator
       gnome.gnome-characters

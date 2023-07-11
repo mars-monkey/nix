@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-
+# hi
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -41,6 +41,7 @@
       drawing
       eartag
       electron-mail
+      epiphany
       evince
       ferdium
       gaphor

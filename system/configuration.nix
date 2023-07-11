@@ -1,4 +1,4 @@
-# Help is available in the configuration.nix(5) man page.
+# h Help is available in the configuration.nix(5) man page.
 # Edit hardware-configuration.nix as well
  
 { config, lib, modulesPath, pkgs, ... }:
@@ -92,7 +92,6 @@
   networking = {
     hostName = "mars-monkey-machine";
     networkmanager.enable = true;
-    useDHCP = lib.mkDefault true;
     nameservers = [ "1.1.1.3, 1.0.0.3" ];
     
     firewall = {

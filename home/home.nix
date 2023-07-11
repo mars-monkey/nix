@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-
+#hi
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -10,10 +10,10 @@
     
     shellAliases = {
       ll = "ls -la";
-      scf = "sudo nano ~/nix/system/configuration.nix";
+      scf = "sudo nano ~/nix/system/configuration.nix && pushd ~/nix && git commit -m 'Push local configuration.nix' && popd";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
-      hcf = "nano ~/nix/home/home.nix";
+      hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git commit -m 'Push local configuration.nix' && popd ";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey";
     };
     

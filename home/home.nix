@@ -11,11 +11,11 @@
     shellAliases = {
       ll = "ls -la";
       scf = "sudo nano ~/nix/system/configuration.nix &&
-      var=$(pwd) &&
-      cd ~/nix &&
-      git add -A &&
-      git commit -m 'Push local changes' &&
-      cd $var";
+            var=$(pwd) &&
+            cd ~/nix &&
+            git add -A &&
+            git commit -m 'Push local changes' &&
+            cd $var";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
       hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git add -A && git commit -m 'Push local changes' && popd ";

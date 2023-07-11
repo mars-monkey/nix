@@ -105,6 +105,7 @@
     thermald.enable = true;
     locate.enable = true;
     printing.enable = true;
+    flatpak.enable = true;
     gvfs.enable = true;
     
     gnome = {

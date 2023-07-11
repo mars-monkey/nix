@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-#hi
+
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -10,10 +10,10 @@
     
     shellAliases = {
       ll = "ls -la";
-      scf = "sudo nano ~/nix/system/configuration.nix && pushd ~/nix && git commit -m 'Push local configuration.nix' && popd";
+      scf = "sudo nano ~/nix/system/configuration.nix && pushd ~/nix && git add -A && git commit -m 'Push local changes' && popd";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
-      hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git commit -m 'Push local configuration.nix' && popd ";
+      hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git add -A && git commit -m 'Push local changes' && popd ";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey";
       gp = "pushd ~/nix && git add --all && git commit -m 'Push local repo' && popd";
     };
@@ -49,6 +49,8 @@
       gh
       git
       gitg
+      gnomeExtensions.pop-shell
+      gnomeExtensions.ddterm
       gnome.dconf-editor
       gnome.gnome-calculator
       gnome.gnome-characters
@@ -73,6 +75,7 @@
       gnome-text-editor
       gparted
       gradience
+      guake
       intel-gpu-tools
       iotas
       jellyfin-web
@@ -147,6 +150,14 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       gtk-theme = "Adw-gtk3-dark";
+    };
+    # Extensions
+    "org/gnome/shell" = {
+      disable-user-extensions = false;
+      enabled-extensions = [
+        "pop-shell@system76.com"
+        "ddterm@amezin.github.com"
+      ];
     };
   };
 }

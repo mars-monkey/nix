@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-# hi
+# hi all
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 

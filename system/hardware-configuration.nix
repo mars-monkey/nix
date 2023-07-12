@@ -16,31 +16,31 @@
   fileSystems."/" =
     { label = "ROOT";
       fsType = "btrfs";
-      options = [ "subvol=root" "noatime" "compress=zstd" ];
+      options = [ "subvol=root" "noatime" ];
     };
 
   fileSystems."/home" =
     { label = "ROOT";
       fsType = "btrfs";
-      options = [ "subvol=home" "noatime" "compress=zstd" ];
+      options = [ "subvol=home" "noatime" ];
     };
 
   fileSystems."/nix" =
     { label = "ROOT";
       fsType = "btrfs";
-      options = [ "subvol=nix" "noatime" "compress=zstd" ];
+      options = [ "subvol=nix" "noatime" ];
     };
 
   fileSystems."/persist" =
     { label = "ROOT";
       fsType = "btrfs";
-      options = [ "subvol=persist" "noatime" "compress=zstd" ];
+      options = [ "subvol=persist" "noatime" ];
     };
 
   fileSystems."/var/log" =
     { label = "ROOT";
       fsType = "btrfs";
-      options = [ "subvol=var/log" "noatime" "compress=zstd" ];
+      options = [ "subvol=var/log" "noatime" ];
     };
 
   fileSystems."/boot" =

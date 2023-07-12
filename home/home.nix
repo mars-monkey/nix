@@ -13,10 +13,10 @@
       gp = "~/nix/home/gp.sh";
       hcf = "nano ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ~/nix/home/gp.sh";
-      ll = "ls -la";
       scf = "sudo nano ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
+      upd = "";
     };
     
     sessionVariables = {

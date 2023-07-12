@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-#hi
+
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -9,13 +9,14 @@
     stateVersion = "23.05";
     
     shellAliases = {
+      cl = "clear";
+      gp = "bash ~/nix/home/gp.sh";
+      hcf = "nano ~/nix/home/home.nix && bash ~/nix/home/gp.sh";
+      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && bash ~/nix/home/gp.sh";
       ll = "ls -la";
       scf = "sudo nano ~/nix/system/configuration.nix && bash ~/nix/home/gp.sh";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
-      hcf = "nano ~/nix/home/home.nix && bash ~/nix/home/gp.sh";
-      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && bash ~/nix/home/gp.sh";
-      gp = "bash ~/nix/home/gp.sh";
     };
     
     sessionVariables = {

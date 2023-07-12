@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-
+# hi
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -20,6 +20,7 @@
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
       hcf = "nano ~/nix/home/home.nix &&
              tmp_wd=$(pwd) &&
+             cd ~/nix &&
              git commit -a -m 'Local edits' &&
              git push &&
              cd $tmp_wd";

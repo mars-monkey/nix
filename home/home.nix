@@ -53,6 +53,7 @@
       gitg
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.pop-shell
+      gnomeExtensions.vitals
       gnome.dconf-editor
       gnome.gnome-calculator
       gnome.gnome-characters
@@ -159,6 +160,7 @@
       enabled-extensions = [
         "pop-shell@system76.com"
         "AlphabeticalAppGrid@stuarthayhurst"
+        "Vitals@CoreCoding.com"
       ];
       disabled-extensions = [];
     };

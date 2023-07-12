@@ -4,7 +4,7 @@
 
 original_working_directory=$(pwd)
 
-cd $1
+cd ~/nix
 
 git commit -a -m "Local changes autocommit"
 

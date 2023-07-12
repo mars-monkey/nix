@@ -163,6 +163,7 @@
         "AlphabeticalAppGrid@stuarthayhurst"
         "Vitals@CoreCoding.com"
         "drive-menu@gnome-shell-extensions.gcampax.github.com"
+        "appindicatorsupport@rgcjonas.gmail.com"
       ];
       disabled-extensions = [];
     };

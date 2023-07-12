@@ -96,6 +96,7 @@
       neofetch
       newsflash
       nextcloud-client
+      nixos-generators
       obs-studio
       onlyoffice-bin
       pika-backup

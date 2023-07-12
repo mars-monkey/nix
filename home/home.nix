@@ -14,9 +14,9 @@
       hcf = "nano ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && bash ~/nix/home/gp.sh";
       ll = "ls -la";
-      scf = "sudo nano ~/nix/system/configuration.nix && bash ~/nix/home/gp.sh";
-      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
-      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
+      scf = "sudo nano ~/nix/system/configuration.nix";
+      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && bash ~/nix/home/gp.sh";
+      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && bash ~/nix/home/gp.sh";
     };
     
     sessionVariables = {

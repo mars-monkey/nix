@@ -103,7 +103,6 @@
       prismlauncher
       protonvpn-gui
       rpi-imager
-      steam
       textpieces
       tldr
       vlc

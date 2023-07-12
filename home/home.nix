@@ -161,6 +161,7 @@
         "pop-shell@system76.com"
         "AlphabeticalAppGrid@stuarthayhurst"
         "Vitals@CoreCoding.com"
+        "drive-menu@gnome-shell-extensions.gcampax.github.com"
       ];
       disabled-extensions = [];
     };

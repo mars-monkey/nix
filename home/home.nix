@@ -161,9 +161,9 @@
         "AlphabeticalAppGrid@stuarthayhurst"
       ];
       disabled-extensions = [
-        "native-window-placement@gnome-shell-extensions.gcampax.github.com"
+       /* "native-window-placement@gnome-shell-extensions.gcampax.github.com"
         "window-list@gnome-shell-extensions.gcampax.github.com"
-        "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+        "windowsNavigator@gnome-shell-extensions.gcampax.github.com"*/
       ];
     };
   };

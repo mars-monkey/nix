@@ -27,6 +27,7 @@
     
     packages = with pkgs; [
       amberol
+      andika
       audacity
       baobab
       bitwarden

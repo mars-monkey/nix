@@ -53,6 +53,7 @@
       gitg
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
+      gnomeExtensions.caffeine
       gnomeExtensions.pop-shell
       gnomeExtensions.vitals
       gnome.dconf-editor
@@ -164,6 +165,7 @@
         "Vitals@CoreCoding.com"
         "drive-menu@gnome-shell-extensions.gcampax.github.com"
         "appindicatorsupport@rgcjonas.gmail.com"
+        "caffeine@patapon.info"
       ];
       disabled-extensions = [];
     };

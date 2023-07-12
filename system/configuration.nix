@@ -60,8 +60,8 @@
     gc = {
       automatic = true;
       persistent = true;
-      dates = "19:10";
-      options = "--delete-older-than 3d";
+      dates = "daily";
+      options = "--delete-older-than 2d";
     };
 
     settings = {

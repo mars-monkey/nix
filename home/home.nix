@@ -10,16 +10,12 @@
     
     shellAliases = {
       ll = "ls -la";
-      scf = "sudo nano ~/nix/system/configuration.nix && ./gp.sh &";
+      scf = "sudo nano ~/nix/system/configuration.nix && bash ~/nix/home/gp.sh &";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
-      hcf = "nano ~/nix/home/home.nix && ./gp.sh &";
-      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ./gp.sh &";
-      gp = "tmp_wd=$(pwd) &&
-            cd ~/nix &&
-            git commit -a -m 'Local edits' &&
-            git push &&
-            cd $tmp_wd";
+      hcf = "nano ~/nix/home/home.nix && bash ~/nix/home/gp.sh &";
+      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && bash ~/nix/home/gp.sh &";
+      gp = "bash ~/nix/home/gp.sh";
     };
     
     sessionVariables = {

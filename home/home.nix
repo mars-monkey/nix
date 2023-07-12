@@ -162,7 +162,7 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "pop-shell@system76.com"
-        "ddterm@amezin.github.com"
+        "AlphabeticalAppGrid@stuarthayhurst"
       ];
     };
   };

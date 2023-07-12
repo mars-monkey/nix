@@ -76,7 +76,6 @@
       gnome.simple-scan
       gnome-connections
       gnome-obfuscate
-      gnome-secrets
       gnome-solanum
       gnome-text-editor
       gparted

@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
-# hi all
+
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
@@ -11,16 +11,24 @@
     shellAliases = {
       ll = "ls -la";
       scf = "sudo nano ~/nix/system/configuration.nix &&
-            var=$(pwd) &&
-            cd ~/nix &&
-            git add -A &&
-            git commit -m 'Push local changes' &&
-            cd $var";
+             tmp_wd=$(pwd) &&
+             cd ~/nix  &&
+             git commit -a -m 'Local edits' &&
+             git push &&
+             cd $tmp_wd";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine";
-      hcf = "nano ~/nix/home/home.nix && pushd ~/nix && git add -A && git commit -m 'Push local changes' && popd ";
+      hcf = "nano ~/nix/home/home.nix &&
+             tmp_wd=$(pwd) &&
+             git commit -a -m 'Local edits' &&
+             git push &&
+             cd $tmp_wd";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey";
-      gp = "var=$(pwd) && cd ~/nix && git add -A && git commit -m 'Push local repo' && git push && cd $var";
+      gp = "tmp_wd=$(pwd) &&
+            cd ~/nix &&
+            git commit -a -m 'Local edits' &&
+            git push &&
+            cd $tmp_wd";
     };
     
     sessionVariables = {

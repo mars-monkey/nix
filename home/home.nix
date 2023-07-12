@@ -146,7 +146,6 @@
 
     gtk4.extraConfig = {
       settings = ''
-        gtk-application-prefer-dark-theme=1
       '';
     };
   };

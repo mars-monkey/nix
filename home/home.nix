@@ -13,10 +13,11 @@
       gp = "~/nix/home/gp.sh";
       hcf = "nano ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ~/nix/home/gp.sh";
+      hup = "nix flake update ~/nix/home";
       scf = "sudo nano ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
-      hup = "";
+      sup = "nix flake update ~/nix/system";
     };
     
     sessionVariables = {

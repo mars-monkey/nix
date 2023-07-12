@@ -143,11 +143,6 @@
         gtk-application-prefer-dark-theme=1
       '';
     };
-
-    gtk4.extraConfig = {
-      settings = ''
-      '';
-    };
   };
   
   dconf.settings = {

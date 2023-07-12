@@ -52,6 +52,7 @@
       git
       gitg
       gnomeExtensions.alphabetical-app-grid
+      gnomeExtensions.appindicator
       gnomeExtensions.pop-shell
       gnomeExtensions.vitals
       gnome.dconf-editor

@@ -132,6 +132,7 @@
       tldr
       #### Libraries/Drivers ####
       ntfs3g
+      firehol
       # GPU stuff
       intel-gpu-tools
       libva-utils

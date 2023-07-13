@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
@@ -148,7 +148,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      gtk-theme = "Adw-gtk3-dark";
+      gtk-theme = lib.mkForce "adw-gtk3-dark";
     };
     # Extensions
     "org/gnome/shell" = {

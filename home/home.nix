@@ -27,6 +27,8 @@
     };
     
     packages = with pkgs; [
+      adwaita-qt
+      adwaita-qt6
       amberol
       andika
       audacity

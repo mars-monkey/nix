@@ -151,7 +151,7 @@
   
   programs = {
     home-manager.enable = true;
-    bash.enable = true;
+    zsh.enable = true;
     
     git = {
       enable = true;

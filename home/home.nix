@@ -139,9 +139,11 @@
     };
 
     gtk3.extraConfig = {
-      Settings = ''
-        gtk-application-prefer-dark-theme=1
-      '';
+      gtk-application-prefer-dark-theme = "0";
+    };
+    
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = "0";
     };
   };
   
@@ -150,9 +152,11 @@
       color-scheme = "prefer-dark";
       gtk-theme = lib.mkForce "adw-gtk3-dark";
     };
+    
     # Extensions
     "org/gnome/shell" = {
       disable-user-extensions = false;
+      
       enabled-extensions = [
         "pop-shell@system76.com"
         "AlphabeticalAppGrid@stuarthayhurst"
@@ -161,6 +165,7 @@
         "appindicatorsupport@rgcjonas.gmail.com"
         "caffeine@patapon.info"
       ];
+      
       disabled-extensions = [];
     };
   };

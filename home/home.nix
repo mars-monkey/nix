@@ -152,7 +152,8 @@
   programs = {
     home-manager.enable = true;
     zsh.enable = true;
-    
+    bash.enable = true;    
+
     git = {
       enable = true;
       userEmail = "91227993+mars-monkey@users.noreply.github.com";

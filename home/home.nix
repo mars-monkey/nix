@@ -27,94 +27,125 @@
     };
     
     packages = with pkgs; [
-      adwaita-qt
-      adwaita-qt6
-      andika
-      audacity
-      baobab
-      bitwarden
+      #### GUI ####
+
+      # Shell/terminal
       blackbox-terminal
-      bottles
-      brave
-      btrbk
-      celeste
-      chatterino2
-      clapper
-      denaro
-      dialect
-      drawing
-      eartag
+      zsh
+      zsh-autosuggestions
+      guake
+      # Communication
+      webcord
       electron-mail
-      epiphany
-      evince
-      ferdium
-      gaphor
-      geogebra
-      gcolor3
-      gh
+      jitsi
+      zoom
+      chatterino2
+      # Word Processing
+      libreoffice
+      onlyoffice-bin # For improved compatibility over libreoffice
+      gnome-text-editor
+      # Services
+      bitwarden
+      denaro
+      celeste
+      kodi-wayland
+      jellyfin-web
+      pika-backup
+      protonvpn-gui
+      nextcloud-client
+      newsflash # RSS feed reader
+      # File editors
+      audacity
+      pitivi # Video editor
       gimp
-      git
-      gitg
-      gnomeExtensions.alphabetical-app-grid
-      gnomeExtensions.appindicator
-      gnomeExtensions.caffeine
-      gnomeExtensions.pop-shell
-      gnomeExtensions.vitals
-      gnome.dconf-editor
+      # Utilities
       gnome.gnome-calculator
-      gnome.gnome-characters
+      gnome.gnome-system-monitor
+      gnome.gnome-sound-recorder
+      gnome-obfuscate
+      baobab # Disk usage analyzer
+      whatip
+      gnome-solanum # Pomodoro timer
+      eartag # File tag editor
+      evince # Document viewer
+      gcolor3 # Color picker
+      clapper # Video viewer
+      gnome.eog # Photo viewer
+      gnome.gnome-power-manager # Battery stats
+      textpieces # Manipulate text without random websites
+      dialect # Translate app
+      iotas # MD notes app
+      drawing
+      vlc
       gnome.gnome-clocks
-      gnome.gnome-color-manager
-      gnome.eog
-      gnome.gnome-font-viewer
       gnome.gnome-logs
       gnome.gnome-maps
-      gnome.gnome-mines
-      gnome.gnome-power-manager
-      gnome.gnome-sound-recorder
-      gnome.gnome-sudoku
-      gnome.gnome-system-monitor
-      gnome.gnome-tweaks
+      gnome.gnome-characters # Emojis and other chars
       gnome.nautilus
       gnome.simple-scan
       gnome-connections
-      gnome-obfuscate
-      gnome-solanum
-      gnome-text-editor
-      gparted
-      gradience
-      guake
-      intel-gpu-tools
-      iotas
-      jellyfin-web
-      jitsi
-      kodi-wayland
-      libreoffice
-      librewolf
-      libva-utils
-      lunar-client
-      mangohud
-      neofetch
-      newsflash
-      nextcloud-client
-      nixos-generators
+      gnome-secrets
+      gnome.gnome-font-viewer
       obs-studio
-      onlyoffice-bin
-      pika-backup
-      pitivi
-      plocate
+      gaphor
+      geogebra
+      # Partition tools
+      gparted
+      rpi-imager
+      # Settings
+      gnome.dconf-editor
+      gnome.gnome-tweaks
+      # Web browsers
+      librewolf
+      brave
+      epiphany
+      ferdium
+      # Hypervisors
+      bottles      
+      # Games
       prismlauncher
-      protonvpn-gui
+      steam
+      mangohud # System usage stats
+      lunar-client
+      gnome.gnome-mines
+      gnome.gnome-sudoku
+      #### Theming ####
+      adwaita-qt6
+      adwaita-qt
       qgnomeplatform
       qgnomeplatform-qt6
-      rpi-imager
-      textpieces
-      tldr
-      vlc
-      webcord
-      whatip
+      gradience
+      #### CLI ####
+      android-tools
+      speedtest-cli
+      nixos-generators
+      nix-index
+      gh
+      git
+      gitg
       youtube-tui
-      zoom
+      btrbk
+      plocate
+      neofetch
+      tldr
+      #### Libraries/Drivers ####
+      # GPU stuff
+      intel-gpu-tools
+      libva-utils
+      # Fonts
+      andika
+      # Gnome Extensions
+      gnomeExtensions.supergfxctl-gex
+      gnomeExtensions.pop-shell
+      gnomeExtensions.vitals
+      gnomeExtensions.removable-drive-menu
+      gnomeExtensions.alphabetical-app-grid
+      gnomeExtensions.appindicator
+      gnomeExtensions.caffeine
+      #gnomeExtensions.ddterm
+      # ddterm dependencies
+      #gjs
+      #vte
     ];
   };
   

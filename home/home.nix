@@ -77,6 +77,7 @@
       iotas # MD notes app
       drawing
       vlc
+      virtualbox
       gnome.gnome-clocks
       gnome.gnome-logs
       gnome.gnome-maps
@@ -104,7 +105,6 @@
       bottles      
       # Games
       prismlauncher
-      steam
       mangohud # System usage stats
       lunar-client
       gnome.gnome-mines

@@ -23,6 +23,7 @@
     sessionVariables = {
       EDITOR = "nano";
       MOZ_ENABLE_WAYLAND = "1";
+      QT_QPA_PLATFORMTHEME = "gnome";
     };
     
     packages = with pkgs; [
@@ -102,6 +103,7 @@
       plocate
       prismlauncher
       protonvpn-gui
+      qgnomeplatform
       qgnomeplatform-qt6
       rpi-imager
       textpieces

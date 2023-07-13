@@ -102,6 +102,7 @@
       plocate
       prismlauncher
       protonvpn-gui
+      qgnomeplatform-qt6
       rpi-imager
       textpieces
       tldr

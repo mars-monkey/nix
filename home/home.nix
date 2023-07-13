@@ -130,6 +130,7 @@
       neofetch
       tldr
       #### Libraries/Drivers ####
+      ntfs3g
       # GPU stuff
       intel-gpu-tools
       libva-utils

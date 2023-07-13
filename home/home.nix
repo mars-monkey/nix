@@ -23,7 +23,7 @@
     sessionVariables = {
       EDITOR = "nano";
       MOZ_ENABLE_WAYLAND = "1";
-      QT_QPA_PLATFORMTHEME = "gnome";
+      QT_QPA_PLATFORMTHEME = "gtk3";
     };
     
     packages = with pkgs; [

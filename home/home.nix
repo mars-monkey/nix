@@ -76,6 +76,7 @@
       dialect # Translate app
       iotas # MD notes app
       drawing
+      ventoy-full
       vlc
       virtualbox
       gnome.gnome-clocks

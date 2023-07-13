@@ -52,6 +52,7 @@
       geogebra
       gcolor3
       gh
+      gimp
       git
       gitg
       gnomeExtensions.alphabetical-app-grid

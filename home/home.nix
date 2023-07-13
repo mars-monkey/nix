@@ -80,6 +80,7 @@
       vlc
       virtualbox
       gnome.gnome-clocks
+      gnome.gnome-disk-utility
       gnome.gnome-logs
       gnome.gnome-maps
       gnome.gnome-characters # Emojis and other chars

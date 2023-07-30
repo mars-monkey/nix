@@ -42,13 +42,13 @@
   system = {
     stateVersion = "23.05";
     
-    autoUpgrade = {
+/*    autoUpgrade = {
       enable = false;
       allowReboot = false;
       operation = "boot";
       dates = "daily";
       persistent = false;
-    };
+    };*/
   };
   
   console = {

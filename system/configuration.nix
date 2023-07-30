@@ -58,7 +58,7 @@
   
   nix = {
     gc = {
-      automatic = true;
+      automatic = false;
       persistent = true;
       dates = "daily";
       options = "--delete-older-than 2d";

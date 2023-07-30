@@ -140,8 +140,8 @@
   
   environment = {
 
-    systemPackages = [
-      
+    systemPackages = with pkgs; [
+      terminus_font
     ];
 
     gnome.excludePackages = with pkgs; [

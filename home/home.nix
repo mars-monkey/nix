@@ -30,7 +30,7 @@
     
     packages = with pkgs; [
       #### GUI ####
-
+      calibre
       # Shell/terminal
       blackbox-terminal
       zsh

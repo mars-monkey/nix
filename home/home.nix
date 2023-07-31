@@ -31,6 +31,7 @@
     packages = with pkgs; [
       #### GUI ####
       calibre
+      tealdeer
       # Shell/terminal
       blackbox-terminal
       zsh
@@ -131,7 +132,6 @@
       btrbk
       plocate
       neofetch
-      tldr
       #### Libraries/Drivers ####
       ntfs3g
       firehol

@@ -29,7 +29,7 @@
     };
     
     packages = with pkgs; [
-      #### GUI ####
+      speedtest-cli
       calibre
       tealdeer
       # Shell/terminal

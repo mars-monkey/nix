@@ -1,4 +1,4 @@
-# hi Help is available in the configuration.nix(5) man page.
+# Help is available in the configuration.nix(5) man page.
 # Edit hardware-configuration.nix as well
  
 { config, lib, modulesPath, pkgs, ... }:

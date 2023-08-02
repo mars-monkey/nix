@@ -29,6 +29,7 @@
     };
     
     packages = with pkgs; [
+      neovim
       speedtest-cli
       calibre
       tealdeer

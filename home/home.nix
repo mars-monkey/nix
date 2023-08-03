@@ -15,6 +15,7 @@
       hcf = "nano ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ~/nix/home/gp.sh";
       hup = "nix flake update ~/nix/home";
+      int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
       scf = "sudo nano ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
@@ -29,6 +30,7 @@
     };
     
     packages = with pkgs; [
+      cinnamon.nemo
       vim
       speedtest-cli
       calibre

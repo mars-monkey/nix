@@ -12,19 +12,20 @@
       
       cl = "clear";
       gp = "~/nix/home/gp.sh";
-      hcf = "nano ~/nix/home/home.nix";
+      hcf = "vim ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ~/nix/home/gp.sh";
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
-      scf = "sudo nano ~/nix/system/configuration.nix";
+      pi = "ssh casa@192.168.100.102";
+      scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       sup = "nix flake update ~/nix/system";
     };
     
     sessionVariables = {
-      EDITOR = "nano";
+      EDITOR = "vim";
       MOZ_ENABLE_WAYLAND = "1";
       QT_QPA_PLATFORMTHEME = "gnome";
     };
@@ -35,22 +36,18 @@
       speedtest-cli
       calibre
       tealdeer
-      # Shell/terminal
       blackbox-terminal
       zsh
       zsh-autosuggestions
       guake
-      # Communication
       webcord
       electron-mail
       jitsi
       zoom
       chatterino2
-      # Word Processing
       libreoffice
-      onlyoffice-bin # For improved compatibility over libreoffice
+      onlyoffice-bin
       gnome-text-editor
-      # Services
       bitwarden
       denaro
       celeste
@@ -59,28 +56,26 @@
       pika-backup
       protonvpn-gui
       nextcloud-client
-      newsflash # RSS feed reader
-      # File editors
+      newsflash
       audacity
-      pitivi # Video editor
+      pitivi
       gimp
-      # Utilities
       gnome.gnome-calculator
       gnome.gnome-system-monitor
       gnome.gnome-sound-recorder
       gnome-obfuscate
-      baobab # Disk usage analyzer
+      baobab
       whatip
-      gnome-solanum # Pomodoro timer
-      eartag # File tag editor
-      evince # Document viewer
-      gcolor3 # Color picker
-      clapper # Video viewer
-      gnome.eog # Photo viewer
-      gnome.gnome-power-manager # Battery stats
-      textpieces # Manipulate text without random websites
-      dialect # Translate app
-      iotas # MD notes app
+      gnome-solanum
+      eartag
+      evince
+      gcolor3
+      clapper
+      gnome.eog
+      gnome.gnome-power-manager
+      textpieces
+      dialect
+      iotas
       drawing
       ventoy-full
       vlc
@@ -89,7 +84,7 @@
       gnome.gnome-disk-utility
       gnome.gnome-logs
       gnome.gnome-maps
-      gnome.gnome-characters # Emojis and other chars
+      gnome.gnome-characters
       gnome.nautilus
       gnome.simple-scan
       gnome-connections
@@ -98,32 +93,20 @@
       obs-studio
       gaphor
       geogebra
-      # Partition tools
       gparted
       rpi-imager
-      # Settings
       gnome.dconf-editor
       gnome.gnome-tweaks
-      # Web browsers
       librewolf
       brave
       epiphany
       ferdium
-      # Hypervisors
       bottles      
-      # Games
       prismlauncher
-      mangohud # System usage stats
+      mangohud
       lunar-client
       gnome.gnome-mines
       gnome.gnome-sudoku
-      #### Theming ####
-      adwaita-qt6
-      adwaita-qt
-      qgnomeplatform
-      qgnomeplatform-qt6
-      gradience
-      #### CLI ####
       android-tools
       speedtest-cli
       nixos-generators
@@ -135,15 +118,11 @@
       btrbk
       plocate
       neofetch
-      #### Libraries/Drivers ####
       ntfs3g
       firehol
-      # GPU stuff
       intel-gpu-tools
       libva-utils
-      # Fonts
       andika
-      # Gnome Extensions
       gnomeExtensions.supergfxctl-gex
       gnomeExtensions.pop-shell
       gnomeExtensions.vitals
@@ -151,10 +130,6 @@
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine
-      #gnomeExtensions.ddterm
-      # ddterm dependencies
-      #gjs
-      #vte
     ];
   };
   

@@ -34,6 +34,8 @@
       cinnamon.nemo
       vim
       speedtest-cli
+      usbutils
+      pciutils
       calibre
       tealdeer
       blackbox-terminal

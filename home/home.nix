@@ -27,7 +27,6 @@
     sessionVariables = {
       EDITOR = "vim";
       MOZ_ENABLE_WAYLAND = "1";
-      QT_QPA_PLATFORMTHEME = "gnome";
     };
     
     packages = with pkgs; [

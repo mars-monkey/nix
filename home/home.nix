@@ -17,7 +17,7 @@
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
-      pi = "ssh casa@192.168.100.102";
+      pi = "ssh casa@192.168.100.5";
       scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
@@ -30,23 +30,22 @@
     };
     
     packages = with pkgs; [
+      blackbox-terminal
+      calibre
+      chatterino2
       cinnamon.nemo
-      vim
+      electron-mail
+      guake
+      jitsi
+      pciutils
       speedtest-cli
       usbutils
-      pciutils
-      calibre
       tealdeer
-      blackbox-terminal
+      vim
+      webcord
+      zoom
       zsh
       zsh-autosuggestions
-      guake
-      webcord
-      electron-mail
-      jitsi
-      zoom
-      chatterino2
-      libreoffice
       onlyoffice-bin
       gnome-text-editor
       bitwarden

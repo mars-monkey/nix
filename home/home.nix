@@ -46,6 +46,7 @@
       zoom
       zsh
       zsh-autosuggestions
+      iperf3
       onlyoffice-bin
       gnome-text-editor
       bitwarden

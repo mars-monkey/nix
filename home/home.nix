@@ -18,6 +18,7 @@
       int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
       pi = "ssh dietpi@192.168.100.5";
+      pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
@@ -36,7 +37,9 @@
       cinnamon.nemo
       electron-mail
       guake
+      iperf3
       jitsi
+      onlyoffice-bin
       pciutils
       speedtest-cli
       usbutils
@@ -46,8 +49,6 @@
       zoom
       zsh
       zsh-autosuggestions
-      iperf3
-      onlyoffice-bin
       gnome-text-editor
       bitwarden
       denaro

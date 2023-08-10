@@ -39,6 +39,7 @@
       guake
       iperf3
       jitsi
+      motrix
       onlyoffice-bin
       pciutils
       speedtest-cli

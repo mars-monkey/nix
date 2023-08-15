@@ -31,108 +31,109 @@
     };
     
     packages = with pkgs; [
+      andika
+      android-tools
+      audacity
+      baobab
+      bitwarden
       blackbox-terminal
+      bottles      
+      brave
+      btrbk
       calibre
+      celeste
       chatterino2
       cinnamon.nemo
-      electron-mail
-      guake
-      iperf3
-      jitsi
-      motrix
-      onlyoffice-bin
-      pciutils
-      speedtest-cli
-      usbutils
-      tealdeer
-      vim
-      webcord
-      zoom
-      zsh
-      zsh-autosuggestions
-      gnome-text-editor
-      bitwarden
-      denaro
-      celeste
-      kodi-wayland
-      jellyfin-web
-      pika-backup
-      protonvpn-gui
-      nextcloud-client
-      newsflash
-      audacity
-      pitivi
-      gimp
-      gnome.gnome-calculator
-      gnome.gnome-system-monitor
-      gnome.gnome-sound-recorder
-      gnome-obfuscate
-      baobab
-      whatip
-      gnome-solanum
-      eartag
-      evince
-      gcolor3
       clapper
-      gnome.eog
-      gnome.gnome-power-manager
-      textpieces
+      denaro
       dialect
-      iotas
       drawing
-      ventoy-full
-      vlc
-      virtualbox
-      gnome.gnome-clocks
-      gnome.gnome-disk-utility
-      gnome.gnome-logs
-      gnome.gnome-maps
-      gnome.gnome-characters
-      gnome.nautilus
-      gnome.simple-scan
-      gnome-connections
-      gnome-secrets
-      gnome.gnome-font-viewer
-      obs-studio
-      gaphor
-      geogebra
-      gparted
-      rpi-imager
-      gnome.dconf-editor
-      gnome.gnome-tweaks
-      librewolf
-      brave
+      eartag
+      electron-mail
       epiphany
+      evince
       ferdium
-      bottles      
-      prismlauncher
-      mangohud
-      lunar-client
-      gnome.gnome-mines
-      gnome.gnome-sudoku
-      android-tools
-      speedtest-cli
-      nixos-generators
-      nix-index
+      firehol
+      gaphor
+      gcolor3
+      geogebra
       gh
+      gimp
       git
       gitg
-      youtube-tui
-      btrbk
-      plocate
-      neofetch
-      ntfs3g
-      firehol
-      intel-gpu-tools
-      libva-utils
-      andika
-      gnomeExtensions.supergfxctl-gex
-      gnomeExtensions.pop-shell
-      gnomeExtensions.vitals
-      gnomeExtensions.removable-drive-menu
+      gnome-connections
+      gnome-obfuscate
+      gnome-secrets
+      gnome-solanum
+      gnome-text-editor
+      gnome.dconf-editor
+      gnome.eog
+      gnome.gnome-calculator
+      gnome.gnome-characters
+      gnome.gnome-clocks
+      gnome.gnome-disk-utility
+      gnome.gnome-font-viewer
+      gnome.gnome-logs
+      gnome.gnome-maps
+      gnome.gnome-mines
+      gnome.gnome-power-manager
+      gnome.gnome-sound-recorder
+      gnome.gnome-sudoku
+      gnome.gnome-system-monitor
+      gnome.gnome-tweaks
+      gnome.nautilus
+      gnome.simple-scan
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine
+      gnomeExtensions.pop-shell
+      gnomeExtensions.removable-drive-menu
+      gnomeExtensions.supergfxctl-gex
+      gnomeExtensions.vitals
+      gparted
+      guake
+      intel-gpu-tools
+      iotas
+      iperf3
+      jellyfin-web
+      jitsi
+      kodi-wayland
+      librewolf
+      libreoffice
+      libva-utils
+      lunar-client
+      mangohud
+      motrix
+      neofetch
+      newsflash
+      nextcloud-client
+      nix-index
+      nixos-generators
+      ntfs3g
+      obs-studio
+      onlyoffice-bin
+      pciutils
+      pika-backup
+      pitivi
+      plocate
+      prismlauncher
+      protonvpn-gui
+      rpi-imager
+      speedtest-cli
+      speedtest-cli
+      tealdeer
+      textpieces
+      usbutils
+      ventoy-full
+      vim
+      virtualbox
+      vlc
+      webcord
+      whatip
+      youtube-tui
+      zoom
+      zsh
+      zsh-autosuggestions
     ];
   };
   

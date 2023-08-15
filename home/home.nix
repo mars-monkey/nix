@@ -34,6 +34,7 @@
       andika
       android-tools
       audacity
+      apostrophe
       baobab
       bitwarden
       blackbox-terminal

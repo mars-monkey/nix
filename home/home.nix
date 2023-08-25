@@ -123,7 +123,6 @@
       speedtest-cli
       speedtest-cli
       tealdeer
-      textpieces
       usbutils
       ventoy-full
       vim

@@ -89,7 +89,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Africa/Douala";
   
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     noto-fonts
     liberation_ttf 
   ];

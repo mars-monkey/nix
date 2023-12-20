@@ -84,6 +84,7 @@
       gnome.gnome-tweaks
       gnome.nautilus
       gnome.simple-scan
+      gnome.totem
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine

@@ -161,7 +161,7 @@
       isNormalUser = true;
       description = "Mars Monkey";
       extraGroups = [ "wheel" "networkmanager" ];
-      passwordFile = "/etc/passwordFile";
+      hashedPasswordFile = "/etc/passwordFile";
       
       packages = with pkgs; [
         home-manager

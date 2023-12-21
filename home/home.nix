@@ -46,6 +46,7 @@
       chatterino2
       cinnamon.nemo
       clapper
+      corefonts
       denaro
       dialect
       drawing

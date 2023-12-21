@@ -91,7 +91,7 @@
   
   fonts.packages = with pkgs; [
     noto-fonts
-    liberation_ttf 
+    liberation_ttf
   ];
   
   networking = {

@@ -58,7 +58,7 @@
       firehol
       gaphor
       gcolor3
-      geogebra
+      geogebra6
       gh
       gimp
       git

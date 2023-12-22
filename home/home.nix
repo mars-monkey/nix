@@ -122,6 +122,7 @@
       pika-backup
       pitivi
       plocate
+      podman
       prismlauncher
       protonvpn-gui
       rpi-imager

@@ -11,17 +11,17 @@
     shellAliases = {
       
       cl = "clear";
-      gp = "~/nix/home/gp.sh";
+      gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
       hcf = "vim ~/nix/home/home.nix";
-      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && ~/nix/home/gp.sh";
+      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       scf = "sudo vim ~/nix/system/configuration.nix";
-      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
-      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && ~/nix/home/gp.sh";
+      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
+      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
       sup = "nix flake update ~/nix/system";
     };
     

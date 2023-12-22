@@ -133,7 +133,7 @@
       vlc
       webcord
       whatip
-      youtube-tui
+      youtube-dl
       zoom
       zsh
       zsh-autosuggestions

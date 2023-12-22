@@ -37,6 +37,7 @@
       apostrophe
       baobab
       bitwarden
+      bibletime
       blackbox-terminal
       bottles      
       brave

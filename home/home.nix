@@ -11,20 +11,20 @@
     shellAliases = {
       
       cl = "clear";
-      gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
+      gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hcf = "vim ~/nix/home/home.nix";
-      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
+      hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
       l = "ls -ahl --color=auto";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       scf = "sudo vim ~/nix/system/configuration.nix";
-      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
-      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git push";
+      srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";
+      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";
       sup = "nix flake update ~/nix/system";
     };
-    
+   
     sessionVariables = {
       EDITOR = "vim";
       MOZ_ENABLE_WAYLAND = "1";

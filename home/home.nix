@@ -105,6 +105,7 @@
       librewolf
       libreoffice
       libva-utils
+      localsend
       lunar-client
       mangohud
       motrix

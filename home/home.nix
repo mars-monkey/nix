@@ -50,6 +50,7 @@
       corefonts
       denaro
       dialect
+      distrobox
       drawing
       eartag
       electron-mail

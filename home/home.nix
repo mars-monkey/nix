@@ -102,6 +102,7 @@
       iperf3
       jellyfin-web
       jitsi
+      keepassxc
       kodi-wayland
       librewolf
       libreoffice
@@ -149,8 +150,6 @@
 
     git = {
       enable = true;
-      userEmail = "91227993+mars-monkey@users.noreply.github.com";
-      userName = "mars-monkey";
     };
     
     mangohud = {

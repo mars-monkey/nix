@@ -126,6 +126,7 @@
       prismlauncher
       protonvpn-gui
       rpi-imager
+      snapshot
       speedtest-cli
       speedtest-cli
       tealdeer

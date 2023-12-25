@@ -41,6 +41,7 @@
       blackbox-terminal
       bottles      
       brave
+      krita
       btrbk
       calibre
       celeste

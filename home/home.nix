@@ -98,6 +98,7 @@
       gnomeExtensions.vitals
       gparted
       guake
+      hugo
       intel-gpu-tools
       iotas
       iperf3

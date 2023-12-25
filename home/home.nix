@@ -96,6 +96,7 @@
       gnomeExtensions.removable-drive-menu
       gnomeExtensions.supergfxctl-gex
       gnomeExtensions.vitals
+      go
       gparted
       guake
       hugo

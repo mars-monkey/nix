@@ -101,6 +101,7 @@
       guake
       hugo
       intel-gpu-tools
+      inter
       iotas
       iperf3
       jellyfin-web

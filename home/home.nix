@@ -115,6 +115,7 @@
       lunar-client
       mangohud
       motrix
+      mprocs
       neofetch
       newsflash
       nextcloud-client

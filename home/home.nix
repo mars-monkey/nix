@@ -19,6 +19,7 @@
       l = "ls -ahl --color=auto";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
+      rm = "trash";
       scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";

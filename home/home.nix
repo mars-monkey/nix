@@ -133,6 +133,7 @@
       speedtest-cli
       speedtest-cli
       tealdeer
+      trash-cli
       usbutils
       ventoy-full
       vim

@@ -58,6 +58,7 @@
       electron-mail
       epiphany
       evince
+      eza
       ferdium
       firehol
       gaphor
@@ -135,6 +136,7 @@
       snapshot
       speedtest-cli
       speedtest-cli
+      starship
       tealdeer
       trash-cli
       usbutils

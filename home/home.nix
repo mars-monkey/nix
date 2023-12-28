@@ -121,6 +121,7 @@
       nextcloud-client
       nix-index
       nixos-generators
+      nushell
       ntfs3g
       obs-studio
       onlyoffice-bin
@@ -144,6 +145,7 @@
       webcord
       whatip
       youtube-dl
+      zellij
       zoom
       zsh
       zsh-autosuggestions

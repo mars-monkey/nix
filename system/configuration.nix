@@ -57,16 +57,19 @@
   };
   
   nix = {
+    optimise = {
+      automatic = true;
+      dates = ["17:10"];
+    };
+
     gc = {
-      automatic = false;
+      automatic = true;
       persistent = true;
-      dates = "daily";
-      options = "--delete-older-than 2d";
+      dates = "17:10";
+      options = "--delete-older-than 3d";
     };
 
     settings = {
-      auto-optimise-store = true;
-      
       experimental-features = [
         "nix-command"
         "flakes"

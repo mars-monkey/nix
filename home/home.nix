@@ -60,6 +60,7 @@
       epiphany
       evince
       eza
+      fastfetch
       ferdium
       firehol
       gaphor

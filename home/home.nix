@@ -24,6 +24,7 @@
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";
       sup = "nix flake update ~/nix/system";
+      ts = "nix-shell -p";
     };
    
     sessionVariables = {
@@ -110,6 +111,7 @@
       jitsi
       keepassxc
       kodi-wayland
+      leaf
       librewolf
       libreoffice
       libva-utils

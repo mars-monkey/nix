@@ -149,6 +149,7 @@
       virtualbox
       vlc
       webcord
+      wget
       whatip
       youtube-dl
       zellij

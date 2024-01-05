@@ -104,6 +104,7 @@
       gparted
       guake
       hugo
+      hw-probe
       intel-gpu-tools
       inter
       iotas

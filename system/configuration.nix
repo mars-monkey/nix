@@ -84,7 +84,7 @@
       allowUnfree = true;
            
       packageOverrides = in_pkgs : {
-        linuxPackages = in_pkgs.linuxPackages_latest;
+        linuxPackages = in_pkgs.linuxPackages_5_15;
       };
     };
   };

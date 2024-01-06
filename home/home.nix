@@ -9,7 +9,7 @@
     stateVersion = "23.05";
     
     shellAliases = {
-      
+      apt = "nala";
       cl = "clear";
       gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hcf = "vim ~/nix/home/home.nix";
@@ -114,6 +114,7 @@
       keepassxc
       kodi-wayland
       leaf
+      lf
       librewolf
       libreoffice
       libva-utils

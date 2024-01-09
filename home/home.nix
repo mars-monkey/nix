@@ -16,15 +16,15 @@
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
-      l = "ls -ahl --color=auto";
+      l = "ls -ah --color=auto";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       rm = "trash";
       scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
-      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C push";
+      srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       sup = "nix flake update ~/nix/system";
-      ts = "nix-shell -p";
+      ts = "nix run nixpkgs#";
     };
    
     sessionVariables = {

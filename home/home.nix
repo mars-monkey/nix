@@ -43,6 +43,7 @@
       blackbox-terminal
       bottles      
       brave
+      btop
       krita
       btrbk
       calibre
@@ -50,7 +51,9 @@
       chatterino2
       cinnamon.nemo
       clapper
+      cmatrix
       corefonts
+      cowsay
       denaro
       dialect
       distrobox
@@ -62,6 +65,7 @@
       eza
       fastfetch
       ferdium
+      figlet
       firehol
       gaphor
       gcolor3
@@ -79,6 +83,7 @@
       gnome.eog
       gnome.gnome-calculator
       gnome.gnome-characters
+      gnome.gnome-chess
       gnome.gnome-clocks
       gnome.gnome-disk-utility
       gnome.gnome-font-viewer
@@ -118,6 +123,7 @@
       librewolf
       libreoffice
       libva-utils
+      lolcat
       lunar-client
       mangohud
       motrix
@@ -136,15 +142,18 @@
       pitivi
       plocate
       pfetch-rs
+      ponysay
       prismlauncher
       protonvpn-gui
       rpi-imager
+      sl
       snapshot
       speedtest-cli
       speedtest-cli
       starship
       tealdeer
       trash-cli
+      tree
       usbutils
       ventoy-full
       vim

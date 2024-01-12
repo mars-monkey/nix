@@ -117,6 +117,7 @@
       jellyfin-web
       jitsi
       keepassxc
+      kitty
       kodi-wayland
       leaf
       lf

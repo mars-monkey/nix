@@ -108,7 +108,9 @@
       logRefusedConnections = true;
     };
   };
-
+  
+  programs.hyprland.enable = true;
+  
   services = {
     fwupd.enable = true;
     thermald.enable = true;

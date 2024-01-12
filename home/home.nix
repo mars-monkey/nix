@@ -160,6 +160,7 @@
       vim
       virtualbox
       vlc
+      waybar
       webcord
       wget
       whatip

@@ -174,7 +174,7 @@
     users.mars-monkey = {
       isNormalUser = true;
       description = "Mars Monkey";
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
       hashedPasswordFile = "/etc/passwordFile";
       
       packages = with pkgs; [

@@ -109,7 +109,10 @@
     };
   };
   
-  programs.hyprland.enable = true;
+  programs = {
+    virt-manager.enable = true;
+    hyprland.enable = true;
+  };
   
   services = {
     fwupd.enable = true;
@@ -149,7 +152,10 @@
     };
   };
   
-  virtualisation.podman.enable = true;
+  virtualisation = {
+    podman.enable = true;
+    libvirtd.enable = true;
+  };
    
   environment = {
 

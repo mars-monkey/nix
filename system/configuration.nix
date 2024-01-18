@@ -161,6 +161,9 @@
 
     systemPackages = with pkgs; [
       terminus_font
+      hplip
+      vim
+      git
     ];
 
     gnome.excludePackages = with pkgs; [

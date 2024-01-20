@@ -49,6 +49,7 @@
       calibre
       celeste
       chatterino2
+      chromium
       cinnamon.nemo
       clapper
       cmatrix

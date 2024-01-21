@@ -154,6 +154,7 @@
       snapshot
       speedtest-cli
       speedtest-cli
+      sqlitebrowser
       starship
       tealdeer
       xfce.thunar

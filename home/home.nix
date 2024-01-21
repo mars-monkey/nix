@@ -156,6 +156,7 @@
       speedtest-cli
       starship
       tealdeer
+      xfce.thunar
       trash-cli
       tree
       usbutils

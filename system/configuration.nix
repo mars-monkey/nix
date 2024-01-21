@@ -182,6 +182,7 @@
       
       packages = with pkgs; [
         home-manager
+        ventoy-full
      ];
     };
   };    

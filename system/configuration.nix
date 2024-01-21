@@ -164,6 +164,8 @@
       hplip
       vim
       git
+      home-manager
+      ventoy-full
     ];
 
     gnome.excludePackages = with pkgs; [
@@ -181,8 +183,6 @@
       hashedPasswordFile = "/etc/passwordFile";
       
       packages = with pkgs; [
-        home-manager
-        ventoy-full
      ];
     };
   };    

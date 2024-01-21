@@ -126,6 +126,7 @@
       libreoffice
       libva-utils
       lolcat
+      loupe
       lunar-client
       mangohud
       motrix
@@ -140,6 +141,7 @@
       obs-studio
       onlyoffice-bin
       pciutils
+      pcmanfm
       pika-backup
       pitivi
       plocate

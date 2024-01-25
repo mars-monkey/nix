@@ -60,6 +60,7 @@
       distrobox
       drawing
       eartag
+      easyeffects
       electron-mail
       epiphany
       evince
@@ -91,6 +92,7 @@
       gnome.gnome-logs
       gnome.gnome-maps
       gnome.gnome-mines
+      gnome.gnome-music
       gnome.gnome-power-manager
       gnome.gnome-sound-recorder
       gnome.gnome-sudoku

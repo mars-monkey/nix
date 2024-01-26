@@ -69,7 +69,6 @@
       ferdium
       figlet
       firehol
-      gaphor
       gcolor3
       geogebra6
       gh

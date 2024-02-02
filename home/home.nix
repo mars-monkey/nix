@@ -69,6 +69,7 @@
       ferdium
       figlet
       firehol
+      fish
       gcolor3
       geogebra6
       gh
@@ -137,8 +138,8 @@
       nextcloud-client
       nix-index
       nixos-generators
-      nushell
       ntfs3g
+      nushell
       obs-studio
       onlyoffice-bin
       pciutils

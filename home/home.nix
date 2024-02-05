@@ -145,7 +145,6 @@
       pciutils
       pcmanfm
       pika-backup
-      pitivi
       plocate
       pfetch-rs
       ponysay

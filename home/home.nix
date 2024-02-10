@@ -54,6 +54,7 @@
       clapper
       cmatrix
       corefonts
+      cosmic-edit
       cowsay
       denaro
       dialect

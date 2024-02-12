@@ -70,6 +70,7 @@
     };
 
     settings = {
+      trusted-users = [ "mars-monkey" ];
       experimental-features = [
         "nix-command"
         "flakes"

@@ -36,50 +36,33 @@
       andika
       android-tools
       audacity
-      apostrophe
       baobab
       bitwarden
-      bibletime
       blackbox-terminal
-      bottles      
       brave
       btop
-      krita
-      btrbk
       calibre
-      celeste
-      chatterino2
       chromium
-      cinnamon.nemo
       clapper
       cmatrix
       corefonts
-      cosmic-edit
       cowsay
       denaro
-      dialect
       distrobox
       drawing
       eartag
       easyeffects
-      electron-mail
-      epiphany
       evince
-      eza
       fastfetch
       ferdium
       figlet
-      firehol
-      fish
       gcolor3
       geogebra6
       gh
       gimp
       git
-      gitg
       gnome-connections
       gnome-obfuscate
-      gnome-secrets
       gnome-solanum
       gnome-text-editor
       gnome.dconf-editor
@@ -111,19 +94,14 @@
       gnomeExtensions.vitals
       go
       gparted
-      guake
       hugo
       hw-probe
       intel-gpu-tools
       inter
       iotas
       iperf3
-      jellyfin-web
-      jitsi
       keepassxc
       kitty
-      kodi-wayland
-      leaf
       lf
       librewolf
       libreoffice
@@ -131,20 +109,12 @@
       lolcat
       loupe
       lunar-client
-      mangohud
-      motrix
-      mprocs
       neofetch
-      newsflash
-      nextcloud-client
-      nix-index
       nixos-generators
       ntfs3g
-      nushell
       obs-studio
       onlyoffice-bin
       pciutils
-      pcmanfm
       pika-backup
       plocate
       pfetch-rs
@@ -154,43 +124,25 @@
       rpi-imager
       sl
       snapshot
-      speedtest-cli
-      speedtest-cli
-      sqlitebrowser
-      starship
       tealdeer
-      xfce.thunar
       trash-cli
       tree
       usbutils
       ventoy-full
       vim
-      virtualbox
       vlc
-      waybar
       webcord
       wget
       whatip
-      youtube-dl
-      zellij
-      zoom
-      zsh
-      zsh-autosuggestions
     ];
   };
   
   programs = {
     home-manager.enable = true;
-    zsh.enable = true;
     bash.enable = true;    
 
     git = {
       enable = true;
-    };
-    
-    mangohud = {
-      enable = true;
-      enableSessionWide = false;
     };
   };
   

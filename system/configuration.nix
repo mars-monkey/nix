@@ -112,7 +112,6 @@
   
   programs = {
     virt-manager.enable = true;
-    hyprland.enable = true;
   };
   
   services = {
@@ -159,7 +158,6 @@
   };
    
   environment = {
-
     systemPackages = with pkgs; [
       terminus_font
       hplip

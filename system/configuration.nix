@@ -129,7 +129,7 @@
     
     xserver = {
       enable = true;
-      layout = "us";
+      xkb.layout = "us";
       # libinput.enable = true;
       excludePackages = [ pkgs.xterm ];
       

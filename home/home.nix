@@ -28,7 +28,7 @@
     };
    
     sessionVariables = {
-      EDITOR = "vim";
+      EDITOR = "nvim";
       MOZ_ENABLE_WAYLAND = "1";
     };
     
@@ -37,6 +37,7 @@
       android-tools
       audacity
       baobab
+      bat
       bitwarden
       blackbox-terminal
       brave
@@ -53,7 +54,9 @@
       eartag
       easyeffects
       evince
+      eza
       fastfetch
+      fd
       ferdium
       figlet
       gcolor3
@@ -110,6 +113,7 @@
       loupe
       lunar-client
       neofetch
+      neovim
       nixos-generators
       ntfs3g
       obs-studio
@@ -121,6 +125,7 @@
       ponysay
       prismlauncher
       protonvpn-gui
+      ripgrep
       rpi-imager
       sl
       snapshot
@@ -134,6 +139,7 @@
       webcord
       wget
       whatip
+      zoxide
     ];
   };
   

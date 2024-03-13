@@ -117,6 +117,7 @@
       nixos-generators
       ntfs3g
       obs-studio
+      obsidian
       onlyoffice-bin
       pciutils
       pika-backup

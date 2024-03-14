@@ -99,6 +99,7 @@
       gparted
       hugo
       hw-probe
+      inkscape
       intel-gpu-tools
       inter
       iotas

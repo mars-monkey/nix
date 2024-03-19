@@ -10,6 +10,7 @@
     
     shellAliases = {
       apt = "nala";
+      cd = "Use zoxide";
       cl = "clear";
       gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hcf = "vim ~/nix/home/home.nix";
@@ -43,6 +44,7 @@
       brave
       btop
       calibre
+      cargo
       chromium
       clapper
       cmatrix
@@ -129,6 +131,7 @@
       protonvpn-gui
       ripgrep
       rpi-imager
+      rustc
       sl
       snapshot
       tealdeer
@@ -148,6 +151,7 @@
   programs = {
     home-manager.enable = true;
     bash.enable = true;    
+    zoxide.enable = true;
 
     git = {
       enable = true;

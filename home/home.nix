@@ -17,7 +17,8 @@
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hup = "nix flake update ~/nix/home";
       int = "ping -c 5 1.1.1.1";
-      l = "ls -ah --color=auto";
+      ls = "eza --oneline --all --sort=modified --icons --git";
+      ll = "eza --oneline --all --sort=modified --icons --git --header --long";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       rm = "trash";

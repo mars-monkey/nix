@@ -114,6 +114,13 @@
   
   programs = {
     virt-manager.enable = true;
+
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        zulu17
+      ];
+    };
   };
   
   services = {

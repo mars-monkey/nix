@@ -168,12 +168,13 @@
    
   environment = {
     systemPackages = with pkgs; [
-      terminus_font
-      hplip
-      vim
       git
       home-manager
+      hplip
+      terminus_font
       ventoy-full
+      vim
+      zfs
     ];
 
     gnome.excludePackages = with pkgs; [

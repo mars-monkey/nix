@@ -89,8 +89,8 @@
       gnome.gnome-sound-recorder
       gnome.gnome-sudoku
       gnome.gnome-system-monitor
-      gnome.gnome-tweaks
       gnome.gnome-terminal
+      gnome.gnome-tweaks
       gnome.nautilus
       gnome.simple-scan
       gnome.totem
@@ -110,14 +110,11 @@
       inter
       iotas
       iperf3
-      zulu17
-      smbnetfs
-      xfce.thunar
       keepassxc
       kitty
       lf
-      librewolf
       libreoffice
+      librewolf
       libva-utils
       lolcat
       loupe
@@ -125,14 +122,15 @@
       neofetch
       neovim
       nixos-generators
+      nmap
       ntfs3g
       obs-studio
       obsidian
       onlyoffice-bin
       pciutils
+      pfetch-rs
       pika-backup
       plocate
-      pfetch-rs
       ponysay
       prismlauncher
       protonvpn-gui
@@ -140,6 +138,7 @@
       rpi-imager
       rustc
       sl
+      smbnetfs
       snapshot
       tealdeer
       trash-cli
@@ -151,7 +150,9 @@
       webcord
       wget
       whatip
+      xfce.thunar
       zoxide
+      zulu17
     ];
   };
   

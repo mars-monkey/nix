@@ -110,6 +110,7 @@
       iperf3
       zulu17
       smbnetfs
+      xfce.thunar
       keepassxc
       kitty
       lf

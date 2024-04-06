@@ -109,6 +109,7 @@
       iotas
       iperf3
       zulu17
+      smbnetfs
       keepassxc
       kitty
       lf

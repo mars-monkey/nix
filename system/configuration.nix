@@ -172,6 +172,7 @@
       home-manager
       hplip
       terminus_font
+      cifs-utils
       ventoy-full
       vim
       zfs

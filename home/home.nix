@@ -69,6 +69,7 @@
       gimp
       git
       gnome-connections
+      gnome-console
       gnome-obfuscate
       gnome-solanum
       gnome-text-editor
@@ -89,6 +90,7 @@
       gnome.gnome-sudoku
       gnome.gnome-system-monitor
       gnome.gnome-tweaks
+      gnome.gnome-terminal
       gnome.nautilus
       gnome.simple-scan
       gnome.totem

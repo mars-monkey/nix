@@ -116,6 +116,7 @@
       libreoffice
       librewolf
       libva-utils
+      localsend
       lolcat
       loupe
       lunar-client

@@ -138,6 +138,7 @@
       ripgrep
       rpi-imager
       rustc
+      skim
       sl
       smbnetfs
       snapshot

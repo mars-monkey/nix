@@ -152,6 +152,7 @@
       wget
       whatip
       xfce.thunar
+      zola
       zoxide
       zulu17
     ];

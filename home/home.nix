@@ -135,6 +135,7 @@
       ponysay
       prismlauncher
       protonvpn-gui
+      publii
       ripgrep
       rpi-imager
       rustc

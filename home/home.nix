@@ -45,7 +45,6 @@
       blackbox-terminal
       brave
       btop
-      calibre
       cargo
       chromium
       clapper

@@ -20,6 +20,12 @@
   hardware = {    
     pulseaudio.enable = false;
     
+    sane = {
+      enable = true;
+      extraBackends = [pkgs.sane-airscan];
+      disabledDefaultBackends = ["escl"];
+    };
+    
     bluetooth = {
       enable = true;
       powerOnBoot = false;
@@ -114,6 +120,7 @@
   };
   
   programs = {
+    system-config-printer.enable = true;
     virt-manager.enable = true;
 
     nix-ld = {
@@ -125,12 +132,19 @@
   };
   
   services = {
+    flatpak.enable = true;
     fwupd.enable = true;
-    thermald.enable = true;
+    gvfs.enable = true;
+    ipp-usb.enable = true;
     locate.enable = true;
     printing.enable = true;
-    flatpak.enable = true;
-    gvfs.enable = true;
+    thermald.enable = true;
+
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
 
     auto-cpufreq = {
       enable = true;
@@ -205,7 +219,7 @@
     users.mars-monkey = {
       isNormalUser = true;
       description = "Mars Monkey";
-      extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
+      extraGroups = [ "wheel" "networkmanager" "libvirtd" "scanner" "lp"];
       hashedPasswordFile = "/etc/passwordFile";
       
       packages = with pkgs; [

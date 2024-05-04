@@ -114,6 +114,7 @@
       lf
       libreoffice
       librewolf
+      superTuxKart
       libva-utils
       localsend
       lolcat

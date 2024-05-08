@@ -42,9 +42,9 @@
       baobab
       bat
       bitwarden
-      blackbox-terminal
       brave
       btop
+      calibre
       cargo
       chromium
       clapper

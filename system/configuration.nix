@@ -104,7 +104,6 @@
     noto-fonts
     liberation_ttf
     corefonts
-    nerdfonts
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   

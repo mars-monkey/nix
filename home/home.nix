@@ -109,12 +109,12 @@
       inter
       iotas
       iperf3
+      kdenlive
       keepassxc
       kitty
       lf
       libreoffice
       librewolf
-      superTuxKart
       libva-utils
       localsend
       lolcat
@@ -140,6 +140,7 @@
       rpi-imager
       rustc
       skim
+      superTuxKart
       sl
       smbnetfs
       snapshot

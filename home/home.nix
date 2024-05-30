@@ -62,6 +62,7 @@
       fd
       ferdium
       figlet
+      foliate
       gcolor3
       geogebra6
       gh

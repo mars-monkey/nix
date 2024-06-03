@@ -220,7 +220,7 @@
     users.mars-monkey = {
       isNormalUser = true;
       description = "Mars Monkey";
-      extraGroups = [ "wheel" "networkmanager" "libvirtd" "scanner" "lp"];
+      extraGroups = [ "wheel" "networkmanager" "libvirtd" "scanner" "lp" "adbusers"];
       hashedPasswordFile = "/etc/passwordFile";
       
       packages = with pkgs; [

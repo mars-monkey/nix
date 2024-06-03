@@ -122,6 +122,8 @@
     system-config-printer.enable = true;
     virt-manager.enable = true;
 
+    adb.enable = true;
+
     nix-ld = {
       enable = true;
       libraries = with pkgs; [

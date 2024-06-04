@@ -192,6 +192,8 @@
     };
   };
   
+  zramSwap.enable = true;
+
   virtualisation = {
     podman.enable = true;
     libvirtd.enable = true;

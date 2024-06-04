@@ -192,7 +192,10 @@
     };
   };
   
-  zramSwap.enable = true;
+  zramSwap = {
+    enable = true;
+    memoryMax = 12000000000;
+  };
 
   virtualisation = {
     podman.enable = true;

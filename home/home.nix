@@ -97,6 +97,7 @@
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine
+      gnomeExtensions.gsconnect
       gnomeExtensions.pop-shell
       gnomeExtensions.removable-drive-menu
       gnomeExtensions.supergfxctl-gex

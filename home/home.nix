@@ -130,6 +130,7 @@
       obs-studio
       obsidian
       onlyoffice-bin
+      pandoc
       pciutils
       pfetch-rs
       pika-backup

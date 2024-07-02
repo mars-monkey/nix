@@ -98,7 +98,7 @@
   };
   
   i18n.defaultLocale = "en_US.UTF-8";
-  time.timeZone = "Africa/Douala";
+  time.timeZone = "America/Vancouver";
   
   fonts.packages = with pkgs; [
     noto-fonts

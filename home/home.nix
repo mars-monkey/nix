@@ -38,6 +38,7 @@
     packages = with pkgs; [
       andika
       android-tools
+      arp-scan
       audacity
       baobab
       bat

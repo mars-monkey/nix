@@ -123,6 +123,7 @@
       lolcat
       loupe
       lunar-client
+      modrinth-app
       neofetch
       neovim
       nixos-generators
@@ -144,10 +145,10 @@
       rpi-imager
       rustc
       skim
-      superTuxKart
       sl
       smbnetfs
       snapshot
+      superTuxKart
       tealdeer
       trash-cli
       tree

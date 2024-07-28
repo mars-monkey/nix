@@ -123,7 +123,6 @@
       lolcat
       loupe
       lunar-client
-      modrinth-app
       neofetch
       neovim
       nixos-generators

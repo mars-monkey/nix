@@ -59,6 +59,7 @@
       easyeffects
       evince
       eza
+      fabric-installer
       fastfetch
       fd
       ferdium

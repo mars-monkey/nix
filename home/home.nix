@@ -66,6 +66,7 @@
       figlet
       foliate
       gcolor3
+      geekbench
       geogebra6
       gh
       gimp

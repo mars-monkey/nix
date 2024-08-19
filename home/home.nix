@@ -134,6 +134,7 @@
       obsidian
       onlyoffice-bin
       pandoc
+      pavucontrol
       pciutils
       pfetch-rs
       pika-backup

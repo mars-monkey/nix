@@ -146,6 +146,7 @@
       ripgrep
       rpi-imager
       rustc
+      samba4Full
       skim
       sl
       smbnetfs

@@ -189,11 +189,12 @@
    
   environment = {
     systemPackages = with pkgs; [
+      cifs-utils
       git
       home-manager
       hplip
+      nh
       terminus_font
-      cifs-utils
       ventoy-full
       vim
       zfs

@@ -33,6 +33,8 @@
     sessionVariables = {
       EDITOR = "nvim";
       MOZ_ENABLE_WAYLAND = "1";
+      NB_ADMIN_URL = "https://vpn.aer.dedyn.io";
+      NB_MANAGEMENT_URL = "https://vpn.aer.dedyn.io";
     };
     
     packages = with pkgs; [
@@ -127,6 +129,7 @@
       lunar-client
       neofetch
       neovim
+      netbird-ui
       nixos-generators
       nmap
       ntfs3g

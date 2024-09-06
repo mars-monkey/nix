@@ -138,6 +138,7 @@
     gvfs.enable = true;
     ipp-usb.enable = true;
     locate.enable = true;
+    netbird.enable = true;
     printing.enable = true;
     thermald.enable = true;
 

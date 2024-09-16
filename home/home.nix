@@ -81,6 +81,7 @@
       gnome.dconf-editor
       gnome.eog
       gnome.gnome-calculator
+      gnome.gnome-calendar
       gnome.gnome-characters
       gnome.gnome-chess
       gnome.gnome-clocks

@@ -168,6 +168,7 @@
       whatip
       xfce.thunar
       zola
+      zotero_7
       zoxide
       zulu17
     ];

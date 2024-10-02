@@ -147,6 +147,7 @@
       prismlauncher
       protonvpn-gui
       publii
+      rawtherapee
       ripgrep
       rpi-imager
       rustc

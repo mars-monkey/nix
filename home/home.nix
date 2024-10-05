@@ -112,6 +112,7 @@
       gparted
       hugo
       hw-probe
+      imagemagick
       inkscape
       intel-gpu-tools
       inter

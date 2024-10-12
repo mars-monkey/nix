@@ -78,28 +78,28 @@
       gnome-obfuscate
       gnome-solanum
       gnome-text-editor
-      gnome.dconf-editor
-      gnome.eog
-      gnome.gnome-calculator
-      gnome.gnome-calendar
-      gnome.gnome-characters
-      gnome.gnome-chess
-      gnome.gnome-clocks
-      gnome.gnome-disk-utility
-      gnome.gnome-font-viewer
-      gnome.gnome-logs
-      gnome.gnome-maps
-      gnome.gnome-mines
-      gnome.gnome-music
-      gnome.gnome-power-manager
-      gnome.gnome-sound-recorder
-      gnome.gnome-sudoku
-      gnome.gnome-system-monitor
-      gnome.gnome-terminal
-      gnome.gnome-tweaks
-      gnome.nautilus
-      gnome.simple-scan
-      gnome.totem
+      dconf-editor
+      eog
+      gnome-calculator
+      gnome-calendar
+      gnome-characters
+      gnome-chess
+      gnome-clocks
+      gnome-disk-utility
+      gnome-font-viewer
+      gnome-logs
+      gnome-maps
+      gnome-mines
+      gnome-music
+      gnome-power-manager
+      gnome-sound-recorder
+      gnome-sudoku
+      gnome-system-monitor
+      gnome-terminal
+      gnome-tweaks
+      nautilus
+      simple-scan
+      totem
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine

@@ -15,7 +15,7 @@
       gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hcf = "vim ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
-      hup = "nix flake update ~/nix/home";
+      hup = "nix flake update --flake ~/nix/home#";
       int = "ping -c 5 1.1.1.1";
       ls = "eza --oneline --all --sort=modified --icons --git --group-directories-first";
       ll = "eza --oneline --all --sort=modified --icons --git --header --long --group-directories-first";
@@ -26,7 +26,7 @@
       scf = "sudo vim ~/nix/system/configuration.nix";
       srb = "sudo nixos-rebuild switch --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       srbb = "sudo nixos-rebuild boot --flake ~/nix/system#mars-monkey-machine && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
-      sup = "nix flake update ~/nix/system";
+      sup = "nix flake update --flake ~/nix/system#";
       ts = "nix run nixpkgs#";
     };
    

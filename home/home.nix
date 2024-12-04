@@ -13,6 +13,7 @@
       cd = "Use zoxide";
       cl = "clear";
       gp = "git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
+      gc = "nh clean all -K 1d";
       hcf = "vim ~/nix/home/home.nix";
       hrb = "home-manager switch --flake ~/nix/home#mars-monkey && git -C ~/nix commit -a -m 'Local changes autocommit' && git -C ~/nix push";
       hup = "nix flake update --flake ~/nix/home#";

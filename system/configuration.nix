@@ -91,9 +91,9 @@
     config = {
       allowUnfree = true;
            
-      /*packageOverrides = in_pkgs : {
+      packageOverrides = in_pkgs : {
         linuxPackages = in_pkgs.linuxPackages_6_1;
-      };*/
+      };
     };
   };
   

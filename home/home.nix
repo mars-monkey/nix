@@ -90,7 +90,6 @@
       gnome-font-viewer
       gnome-logs
       gnome-maps
-      gnome-mines
       gnome-music
       gnome-power-manager
       gnome-sound-recorder

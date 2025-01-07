@@ -43,6 +43,7 @@
       android-tools
       arp-scan
       audacity
+      nodejs_20
       baobab
       bat
       bitwarden

@@ -91,7 +91,7 @@
       gnome-logs
       gnome-maps
       gnome-music
-      element-web
+      element-desktop
       gnome-power-manager
       gnome-sound-recorder
       gnome-sudoku

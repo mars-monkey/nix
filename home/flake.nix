@@ -9,12 +9,17 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    home-manager-latest = {
+      url = "github:nix-community/home-manager";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, home-manager-latest ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      pkgs-latest = 
 
       config = { allowUnfree = true; };
     in {

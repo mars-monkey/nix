@@ -56,11 +56,14 @@
       cmatrix
       corefonts
       cowsay
+      dconf-editor
       denaro
       distrobox
       drawing
       eartag
       easyeffects
+      element-desktop
+      eog
       evince
       eza
       fabric-installer
@@ -75,33 +78,28 @@
       gh
       gimp
       git
-      gnome-connections
-      gnome-console
-      gnome-obfuscate
-      gnome-solanum
-      gnome-text-editor
-      dconf-editor
-      eog
       gnome-calculator
       gnome-calendar
       gnome-characters
       gnome-chess
       gnome-clocks
+      gnome-connections
+      gnome-console
       gnome-disk-utility
       gnome-font-viewer
       gnome-logs
       gnome-maps
+      gnome-mines
       gnome-music
-      element-desktop
+      gnome-obfuscate
       gnome-power-manager
+      gnome-solanum
       gnome-sound-recorder
       gnome-sudoku
       gnome-system-monitor
       gnome-terminal
+      gnome-text-editor
       gnome-tweaks
-      nautilus
-      simple-scan
-      totem
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
       gnomeExtensions.caffeine
@@ -113,6 +111,9 @@
       go
       gparted
       hugo
+      nautilus
+      simple-scan
+      totem
       hw-probe
       imagemagick
       inkscape

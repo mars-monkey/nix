@@ -47,7 +47,6 @@
       baobab
       bat
       bitwarden
-      brave
       btop
       calibre
       cargo
@@ -81,7 +80,6 @@
       gnome-calculator
       gnome-calendar
       gnome-characters
-      gnome-chess
       gnome-clocks
       gnome-connections
       gnome-console
@@ -89,7 +87,6 @@
       gnome-font-viewer
       gnome-logs
       gnome-maps
-      gnome-mines
       gnome-music
       gnome-obfuscate
       gnome-power-manager

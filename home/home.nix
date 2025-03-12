@@ -50,6 +50,7 @@
       btop
       calibre
       cargo
+      gnome-mines
       chromium
       clapper
       cmatrix

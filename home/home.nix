@@ -20,7 +20,7 @@
       int = "ping -c 5 1.1.1.1";
       ls = "eza --oneline --all --sort=modified --icons --git --group-directories-first";
       ll = "eza --oneline --all --sort=modified --icons --git --header --long --group-directories-first";
-      l = "eza --oneline --all --sort=modified --icons --git --header --long --group-directories-first";
+      l = "eza --oneline --all --sort=modified --icons --git --group-directories-first";
       pi = "ssh dietpi@192.168.100.5";
       pib = "ssh dietpi@192.168.100.5 -t ./start.sh";
       rm = "trash";

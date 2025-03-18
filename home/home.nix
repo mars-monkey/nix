@@ -92,7 +92,6 @@
       gnome-power-manager
       gnome-solanum
       gnome-sound-recorder
-      gnome-sudoku
       gnome-system-monitor
       gnome-terminal
       gnome-text-editor
@@ -156,7 +155,6 @@
       sl
       smbnetfs
       snapshot
-      superTuxKart
       tealdeer
       trash-cli
       tree

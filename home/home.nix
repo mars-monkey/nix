@@ -50,7 +50,6 @@
       btop
       calibre
       cargo
-      gnome-mines
       chromium
       clapper
       cmatrix
@@ -129,7 +128,6 @@
       localsend
       lolcat
       loupe
-      lunar-client
       neofetch
       neovim
       netbird-ui

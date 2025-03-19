@@ -82,19 +82,14 @@
       gnome-characters
       gnome-clocks
       gnome-connections
-      gnome-console
       gnome-disk-utility
       gnome-font-viewer
       gnome-logs
       gnome-maps
       gnome-music
-      gnome-obfuscate
       gnome-power-manager
-      gnome-solanum
       gnome-sound-recorder
       gnome-system-monitor
-      gnome-terminal
-      gnome-text-editor
       gnome-tweaks
       gnomeExtensions.alphabetical-app-grid
       gnomeExtensions.appindicator
@@ -145,7 +140,6 @@
       ponysay
       prismlauncher
       protonvpn-gui
-      publii
       rawtherapee
       ripgrep
       rpi-imager
@@ -165,7 +159,6 @@
       webcord
       wget
       whatip
-      xfce.thunar
       zola
       zotero_7
       zoxide

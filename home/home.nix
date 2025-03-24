@@ -102,9 +102,6 @@
       go
       gparted
       hugo
-      nautilus
-      simple-scan
-      totem
       hw-probe
       imagemagick
       inkscape
@@ -122,6 +119,7 @@
       localsend
       lolcat
       loupe
+      nautilus
       neofetch
       neovim
       netbird-ui
@@ -145,11 +143,14 @@
       rpi-imager
       rustc
       samba4Full
+      simple-scan
       skim
       sl
       smbnetfs
       snapshot
+      steam
       tealdeer
+      totem
       trash-cli
       tree
       usbutils

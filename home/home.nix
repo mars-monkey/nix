@@ -136,7 +136,6 @@
       pika-backup
       plocate
       ponysay
-      prismlauncher
       protonvpn-gui
       rawtherapee
       ripgrep

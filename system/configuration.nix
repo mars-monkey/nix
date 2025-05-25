@@ -92,6 +92,7 @@
     config = {
       allowUnfree = true;
            
+      permittedUnsecurePackages = [ "electron-33.4.1 ];
       packageOverrides = in_pkgs : {
         linuxPackages = in_pkgs.linuxPackages_6_1;
       };

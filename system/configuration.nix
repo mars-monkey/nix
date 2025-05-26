@@ -92,7 +92,6 @@
     config = {
       allowUnfree = true;
            
-      permittedUnsecurePackages = [ "electron-33.4.1 ];
       packageOverrides = in_pkgs : {
         linuxPackages = in_pkgs.linuxPackages_6_1;
       };
@@ -111,7 +110,7 @@
   networking = {
     hostName = "mars-monkey-machine";
     networkmanager.enable = true;
-    nameservers = [ "1.1.1.3, 1.0.0.3" ];
+    nameservers = [ "1.1.1.3" "1.0.0.3" ];
     
     firewall = {
       enable = false;

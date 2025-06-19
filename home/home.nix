@@ -148,6 +148,7 @@
       sl
       smbnetfs
       snapshot
+      steam
       tealdeer
       totem
       trash-cli

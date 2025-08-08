@@ -97,7 +97,6 @@
       gnomeExtensions.gsconnect
       gnomeExtensions.pop-shell
       gnomeExtensions.removable-drive-menu
-      gnomeExtensions.supergfxctl-gex
       gnomeExtensions.vitals
       go
       gparted
@@ -109,7 +108,7 @@
       inter
       iotas
       iperf3
-      kdenlive
+      kdePackages.kdenlive
       keepassxc
       kitty
       lf
@@ -153,7 +152,6 @@
       trash-cli
       tree
       usbutils
-      ventoy-full
       vim
       vlc
       webcord

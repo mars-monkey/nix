@@ -196,7 +196,6 @@
       hplip
       nh
       terminus_font
-      ventoy-full
       vim
       zfs
     ];

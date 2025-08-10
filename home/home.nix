@@ -142,6 +142,7 @@
       rpi-imager
       rustc
       samba4Full
+      scribus
       simple-scan
       skim
       sl

@@ -119,6 +119,7 @@
       libva-utils
       localsend
       lolcat
+      lora
       loupe
       merriweather
       nautilus

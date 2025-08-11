@@ -118,6 +118,7 @@
       localsend
       lolcat
       loupe
+      merriweather
       nautilus
       neofetch
       neovim

@@ -3,6 +3,8 @@
 {  
   nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
+  fonts.fontconfig.enable = true;
+
   home = {
     username = "mars-monkey";
     homeDirectory = "/home/mars-monkey";

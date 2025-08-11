@@ -105,6 +105,7 @@
     noto-fonts
     liberation_ttf
     corefonts
+    merriweather
   ];
   
   networking = {

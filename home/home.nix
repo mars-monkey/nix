@@ -122,6 +122,7 @@
       lora
       loupe
       merriweather
+      montserrat
       nautilus
       neofetch
       neovim

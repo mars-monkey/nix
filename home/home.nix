@@ -154,6 +154,7 @@
       smbnetfs
       snapshot
       tealdeer
+      telegram-desktop
       totem
       trash-cli
       tree

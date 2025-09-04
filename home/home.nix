@@ -126,6 +126,7 @@
       nautilus
       neofetch
       neovim
+      lunar-client
       netbird-ui
       nixos-generators
       nmap

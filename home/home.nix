@@ -143,6 +143,7 @@
       ponysay
       prismlauncher
       protonvpn-gui
+      python3
       rawtherapee
       ripgrep
       rpi-imager

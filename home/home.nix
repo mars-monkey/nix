@@ -144,6 +144,7 @@
       prismlauncher
       protonvpn-gui
       python3
+      python313Packages.tkinter
       rawtherapee
       ripgrep
       rpi-imager
